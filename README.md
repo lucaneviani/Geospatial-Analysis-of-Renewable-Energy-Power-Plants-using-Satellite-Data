@@ -34,15 +34,15 @@ To process satellite imagery at scale, I built an automated ETL workflow combini
 
 ```mermaid
 flowchart TD
-    A[⚡ Renewable Power Plant Database<br><i>RePP Africa (1,128 Solar, 276 Wind)</i>] --> B[🛰️ NASA & ESA APIs<br><i>VIIRS Nighttime Lights, MODIS NDVI, MCD12Q1</i>]
-    B --> C[🐍 Satellite Data Download & GEE Processing]
-    C --> D[🗺️ Geospatial Data Cleaning & Geometry Fixes]
-    D --> E[🎯 Spatial Buffer Generation<br><i>Concentric rings from 500m to 20km</i>]
-    E --> F[📐 Counterfactual Donut Sampling<br><i>25km–150km control annuli</i>]
-    F --> G[📊 Satellite Feature Extraction & Zonal Statistics]
-    G --> H[🔗 Spatial Joins & Data Integration<br><i>Adding NASADEM terrain & ERA5 climate baselines</i>]
-    H --> I[📁 Longitudinal Georeferenced Dataset<br><i>259,480 panel observations across 3,992 spatial units</i>]
-    I --> J[📈 Causal Inference Analysis<br><i>Doubly Robust Staggered DiD in R</i>]
+    A["⚡ Renewable Power Plant Database (RePP Africa: 1,128 Solar, 276 Wind)"] --> B["🛰️ NASA & ESA APIs (VIIRS Nighttime Lights, MODIS NDVI, MCD12Q1)"]
+    B --> C["🐍 Satellite Data Download & GEE Processing"]
+    C --> D["🗺️ Geospatial Data Cleaning & Geometry Fixes"]
+    D --> E["🎯 Spatial Buffer Generation (Concentric rings from 500m to 20km)"]
+    E --> F["📐 Counterfactual Donut Sampling (25km–150km control annuli)"]
+    F --> G["📊 Satellite Feature Extraction & Zonal Statistics"]
+    G --> H["🔗 Spatial Joins & Data Integration (NASADEM terrain & ERA5 climate baselines)"]
+    H --> I["📁 Longitudinal Georeferenced Dataset (259,480 panel observations across 3,992 spatial units)"]
+    I --> J["📈 Causal Inference Analysis (Doubly Robust Staggered DiD in R)"]
 ```
 
 ---
@@ -68,16 +68,16 @@ By comparing treated power plant buffers against matched regional control areas,
 graph LR
     subgraph Solar ["☀️ Solar PV Plants"]
         direction TB
-        S1["📍 500m Footprint<br><b>Vegetation Loss (-86.4 NDVI)</b><br><i>Due to land clearing for solar panels</i>"]
-        S2["📈 20km Regional Scale<br><b>Economic Growth (+0.27 NTL)</b><br><i>More night-time lighting & infrastructure</i>"]
-        S3["⚠️ 20km Regional Scale<br><b>Barren Land Increase (+0.90 pp)</b><br><i>Peripheral land transformation</i>"]
+        S1["📍 500m Footprint: Vegetation Loss (-86.4 NDVI)"]
+        S2["📈 20km Regional Scale: Economic Growth (+0.27 NTL)"]
+        S3["⚠️ 20km Regional Scale: Barren Land Increase (+0.90 pp)"]
     end
 
     subgraph Wind ["💨 Wind Power Plants"]
         direction TB
-        W1["💡 All Buffer Scales<br><b>No Lighting Spillovers</b><br><i>Zero detectable NTL change</i>"]
-        W2["🌱 20km Regional Scale<br><b>Barren Land Reduction (-1.00 pp)</b><br><i>Systematic decrease in bare soil</i>"]
-        W3["🌿 2km Local Buffer<br><b>Vegetation Greening (+1.53 pp)</b><br><i>Likely due to fencing & grazing exclusion</i>"]
+        W1["💡 All Buffer Scales: No Lighting Spillovers (Zero NTL change)"]
+        W2["🌱 20km Regional Scale: Barren Land Reduction (-1.00 pp)"]
+        W3["🌿 2km Local Buffer: Vegetation Greening (+1.53 pp)"]
     end
 ```
 
