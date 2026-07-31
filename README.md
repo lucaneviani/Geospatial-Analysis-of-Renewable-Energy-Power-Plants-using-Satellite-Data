@@ -30,7 +30,7 @@ This project was developed as part of my Master's thesis in **Economic Data Anal
 
 The complete methodology, datasets, econometric framework, and empirical results are described in the full thesis document:
 
-📄 **[Read the full thesis](docs/thesis.pdf)**
+📄 **[Read the full thesis](Thesis.pdf)**
 
 ---
 
