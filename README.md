@@ -18,11 +18,21 @@
 
 
 ## Overview
-This project investigates the local economic and environmental impact of utility-scale solar and wind power plants across Africa using satellite imagery and causal inference.
+Research project developed in collaboration with the University of Padua, investigates the local economic and environmental impact of utility-scale solar and wind power plants across Africa using satellite imagery and causal inference.
 
-Rather than relying on existing datasets, I designed and built an end-to-end geospatial data pipeline that automatically collected, processed, and integrated satellite observations from multiple sources into a longitudinal georeferenced dataset. 
+Rather than relying on existing datasets, I designed and built an end-to-end geospatial data pipeline that collected, processed, and integrated satellite observations from multiple sources into a longitudinal georeferenced dataset. 
 
 The final dataset was then used to estimate the causal effects of renewable energy infrastructure using state-of-the-art econometric methods.
+
+## Academic Thesis
+
+This project was developed as part of my Master's thesis in **Economic Data Analytics**.
+
+The complete methodology, datasets, econometric framework, and empirical results are described in the full thesis document:
+
+📄 **[Read the full thesis](docs/thesis.pdf)**
+
+---
 
 ---
 
