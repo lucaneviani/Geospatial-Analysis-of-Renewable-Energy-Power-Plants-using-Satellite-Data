@@ -1,4 +1,20 @@
-# 🌍 Geospatial Analysis of Renewable Energy Power Plants in Africa
+<div align="center">
+
+<img src="assets/renewable_energy_banner.jpg" alt="Renewable Energy Geospatial Analysis Banner" width="100%"/>
+
+# Geospatial Analysis of Renewable Energy Power Plants in Africa
+
+**Satellite-Based Evaluation of Environmental and Economic Impacts of Solar and Wind Infrastructure**
+
+<br>
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-Cloud%20GIS-34A853?style=for-the-badge&logo=google&logoColor=white)](https://earthengine.google.com/)
+[![GeoPandas](https://img.shields.io/badge/GeoPandas-Spatial%20Analysis-139C5A?style=for-the-badge&logo=pandas&logoColor=white)](https://geopandas.org/)
+[![R](https://img.shields.io/badge/R-Econometrics-276DC3?style=for-the-badge&logo=r&logoColor=white)](https://www.r-project.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-Cloud%20GIS-34A853?style=for-the-badge&logo=google&logoColor=white)](https://earthengine.google.com/)
